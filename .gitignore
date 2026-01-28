@@ -1,0 +1,14 @@
+.bash_logout
+.bashrc
+.profile
+.lesshst
+.viminfo
+.sudo_as_admin_successful
+
+.cache/
+.npm/
+.pm2/
+.ssh/
+
+node_modules/
+
