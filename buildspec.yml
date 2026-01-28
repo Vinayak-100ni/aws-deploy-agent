@@ -1,0 +1,34 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies"
+      - npm install
+
+  pre_build:
+    commands:
+      - echo "Running pre-build checks"
+      - node -v
+      - npm -v
+
+  build:
+    commands:
+      - echo "Build phase started"
+      - echo "No build step required for simple Node app"
+
+  post_build:
+    commands:
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - appspec.yml
+    - server.js
+    - package.json
+    - package-lock.json
+    - scripts/**/*
+  discard-paths: no
+
