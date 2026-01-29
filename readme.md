@@ -29,7 +29,7 @@ sudo systemctl enable codedeploy-agent
 
 Step 2: Create an IAM Role for EC2 Instances
 1️⃣ Go to IAM Console → Roles → Create Role
-2️⃣ Select AWS Service → EC2 → Attach AWSCodeDeployFullAccess + 
+2️⃣ Select AWS Service → EC2 → Attach AWSCodeDeployFullAccess + AmazonS3ReadOnlyAccess
 3️⃣ Attach this IAM Role to your EC2 instances in the ASG
 
 
